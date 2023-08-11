@@ -1,0 +1,18 @@
+<h1>AND and OR </h1>
+
+<p>In your where statement, you can combine multiple conditions.
+    Here we show "big" countries that have a large population (greater than 40 millions),
+    OR a large area (greater than 2 million square km)
+</p>
+
+<p>
+Modify the query to find tiny crowded countries, with less the 1000 square km of surface AND more than 2 million inhabitants.
+</p>
+
+<textarea id="codeInput" data-db="world.sql">
+SELECT name FROM world WHERE population>40000000 OR area >2000000
+</textarea> 
+
+<div id="solution">
+SELECT name FROM world WHERE population>2000000 AND area <1000
+</div>

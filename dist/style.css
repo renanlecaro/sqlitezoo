@@ -1,0 +1,144 @@
+body{
+	margin:0;
+	font-family: sans-serif;
+    display: flex;
+    align-items: stretch;
+}
+#menu,
+#content,
+#result{
+    overflow: auto;
+    height: 100vh;
+}
+
+#menu,
+#content {
+    border-right: 1px solid #dadada;
+    resize: horizontal;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 33%;
+    max-width: 80%;
+    min-width: 10px;
+}
+#result{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+*{
+	box-sizing: border-box;
+}
+
+
+#menu {
+    padding: 0;
+    background: #dadada;
+
+}
+#menu a{
+    display: block;
+    text-decoration: none;
+    padding: 12.5px 25px;
+    line-height: 20px;
+    border-bottom: 1px solid #c1c1c1;
+    color: #333;
+}
+ #menu a.active{
+     background:white;
+
+ }
+
+#content textarea{
+	display: block;
+	width: 100%;
+	resize: vertical;
+    min-height: 300px;
+    padding: 20px;
+    font-family: monospace;
+}
+#result{
+	font-family:monospace;
+}
+#result td{
+	max-width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+td,th{
+	line-height: 20px;
+	padding: 10px 20px;
+}
+th{
+    font-weight: bold;
+	border-bottom: 1px solid grey;
+}
+tr:nth-child(2n){
+	background: #eee;
+}
+#solution{
+	display: none;
+}
+
+#content {
+    position: relative;
+	padding: 20px;
+}
+#content
+.buttons{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content:space-between;
+    background: #dadada;
+    gap: 1px;
+    padding: 1px;
+}
+#content
+.buttons
+>*{
+    flex-basis: 33%;
+    flex-grow: 1;
+    text-align: center;
+	cursor: pointer;
+	display: block;
+	padding: 10px 12.5px;
+    background: white;
+	color:#333;
+	border: none;
+	text-decoration: none;
+    font:inherit;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+#content
+.buttons
+>*[disabled="true"]{
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+#content
+.buttons
+>*[disabled="true"]{
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+#result>p{
+
+  padding: 25px;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  background: orange;
+}

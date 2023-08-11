@@ -1,0 +1,12 @@
+{
+  "name": "sqlpark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "start": "rm -rf dist/*.html && nodemon build.js --ignore dist/*.html --ignore node_modules -e js,css,html,sql --watch ",
+    "build": "rm -rf dist/*.html && node build.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,11 +1,11 @@
-<h1>BETWEEN allows range checking </h1>
+<h1>Filter values by interval</h1>
 
 <p>
 Which countries are not too small and not too big? BETWEEN allows range checking (range specified is inclusive of boundary values).
     The example below shows countries with an area of 250,000-300,000 sq. km.
 <p>
 
-<p>Show the country and the area for countries with an area between 200,000 and 250,000 </p>
+<p><strong>Show the country and the area for countries with an area between 200,000 and 250,000 </strong></p>
 
 <textarea id="codeInput" data-db="world.sql">
 SELECT name, area FROM world WHERE area BETWEEN 250000 AND 300000

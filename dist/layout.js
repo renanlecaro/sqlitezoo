@@ -17,5 +17,5 @@ let observer = new ResizeObserver(function(mutations) {
 observer.observe(content);
 observer.observe(menu);
 
-menu.querySelector('a[href="'+window.location.pathname.slice(1)+'"]')?.classList.add('active')
+
 

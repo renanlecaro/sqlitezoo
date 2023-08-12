@@ -37,7 +37,7 @@ Promise.all([
 
 	result.innerHTML = "<p>Setting up db..</p>"
     const db = new sqlite3.oo1.DB();
-    console.log(dbcontenttext)
+
 	db.exec(dbcontenttext);  
 	// compute solution
 	const solutionRows= []

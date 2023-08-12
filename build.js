@@ -16,7 +16,7 @@ files.forEach((file, index)=>{
 	}
 })
 
-const menuContent = files.map(({path, title})=>`<a href="${path}">${title}</a>`).join('')
+const menuContent = currentPath=>files.map(({path, title})=>`<a class="${path===currentPath?'active':''}" href="${path}">${title}</a>`).join('')
 
 files.forEach(({path, content, title,next})=>{
 
@@ -29,7 +29,7 @@ files.forEach(({path, content, title,next})=>{
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤓</text></svg>">
 	<link rel="stylesheet" href="style.css">
 	<body>
-        <nav id="menu">${menuContent}</nav>
+        <nav id="menu"><div class="menu-inner">${menuContent(path)}</div></nav>
         <div id="content">
             ${content}
             <div class="buttons">

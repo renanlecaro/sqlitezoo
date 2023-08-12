@@ -3,6 +3,8 @@ body{
 	font-family: sans-serif;
     display: flex;
     align-items: stretch;
+  background: #fff;
+
 }
 #menu,
 #content,
@@ -13,7 +15,7 @@ body{
 
 #menu,
 #content {
-    border-right: 1px solid #dadada;
+    /*border-right: 1px solid #dadada;*/
     resize: horizontal;
     flex-grow: 0;
     flex-shrink: 0;
@@ -31,21 +33,31 @@ body{
 
 
 #menu {
-    padding: 0;
-    background: #dadada;
-
+    background: linear-gradient(45deg ,#0060df, #a400df);
+    position: relative;
+    overflow: auto;
+    /*The RTL hack to get the scrollbar on the left side also gets the resize handle on the left, not ideal*/
+    /*direction: rtl;*/
 }
+
+#menu .menu-inner{
+    /*direction: ltr;*/
+}
+
 #menu a{
     display: block;
     text-decoration: none;
     padding: 12.5px 25px;
     line-height: 20px;
-    border-bottom: 1px solid #c1c1c1;
-    color: #333;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: #fff;
+
 }
  #menu a.active{
-     background:white;
-
+     background:#fff;
+     color:black;
+     position: relative;
+     z-index: 1;
  }
 
 #content textarea{
@@ -75,7 +87,7 @@ th{
 	border-bottom: 1px solid grey;
 }
 tr:nth-child(2n){
-	background: #eee;
+	background: rgba(0,0,0,0.1);
 }
 #solution{
 	display: none;
@@ -83,7 +95,7 @@ tr:nth-child(2n){
 
 #content {
     position: relative;
-	padding: 20px;
+	padding: 20px 40px;
 }
 #content
 .buttons{
@@ -93,9 +105,9 @@ tr:nth-child(2n){
     bottom: 0;
     display: flex;
     justify-content:space-between;
-    background: #dadada;
-    gap: 1px;
-    padding: 1px;
+    gap: 10px;
+    padding: 10px;
+
 }
 #content
 .buttons
@@ -106,13 +118,28 @@ tr:nth-child(2n){
 	cursor: pointer;
 	display: block;
 	padding: 10px 12.5px;
-    background: white;
-	color:#333;
+    /*background: #0060df;*/
+    background: linear-gradient(45deg, #0060df, #a400df);
+    box-shadow: 0 2px 0 #004095;
+    transform: translateY(-2px);
+	color: #fff;
 	border: none;
 	text-decoration: none;
     font:inherit;
 	font-weight: bold;
 	line-height: 25px;
+    border-radius: 2px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    animation: fadeIn 0.2s;
+}
+
+
+
+#content
+.buttons
+>*:active{
+    box-shadow: 0 0 0 #004095;
+    transform: translateY(0);
 }
 
 #content
@@ -120,15 +147,22 @@ tr:nth-child(2n){
 >*[disabled="true"]{
     opacity: 0.2;
     pointer-events: none;
+    background: #b7b7b7;
+    box-shadow: 0 0 0 #a9a9a9;
+    transform: translateY(0);
 }
 
-#content
-.buttons
->*[disabled="true"]{
+@keyframes fadeIn {
+    0%{
     opacity: 0.2;
-    pointer-events: none;
+    background: #b7b7b7;
+    box-shadow: 0 0 0 #a9a9a9;
+    transform: translateY(0);
+    }
 }
-
+#result{
+    background: linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0) 20px);
+}
 #result>p{
 
   padding: 25px;
@@ -139,6 +173,17 @@ tr:nth-child(2n){
   justify-content: center;
 }
 
-.error {
-  background: orange;
+
+
+
+.error {background: linear-gradient(45deg, #ffce0f, #ff6c00);
+}
+
+h1{
+    margin: 0;
+     font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #0060df, #a400df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

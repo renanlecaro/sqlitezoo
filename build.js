@@ -18,7 +18,7 @@ files.forEach((file, index)=>{
 
 const menuContent = currentPath=>files.map(({path, title})=>`<a class="${path===currentPath?'active':''}" href="${path}">${title}</a>`).join('')
 
-files.forEach(({path, content, title,next})=>{
+files.forEach(({filename, path, content, title,next})=>{
 
 	const nextButton=
 		next ? `<a href="${next.path}" class="button" id="next" disabled>NEXT EXERCISE</a>`  : ''
@@ -43,6 +43,7 @@ files.forEach(({path, content, title,next})=>{
         <script src="layout.js"></script>
         <script src="jswasm/sqlite3.js"></script>
         <script src="runner.js"></script>
+        <a class="github-link" target="_blank" href="https://github.com/renanlecaro/sqlitezoo/edit/main/pages/${filename}" title="If you see a typo, you can correct it on github">Edit on GitHub</a> 
 	</body>
 	</html>`
 

@@ -36,41 +36,44 @@ Promise.all([
 ]).then(([sqlite3, dbcontenttext])=>{
 
 	result.innerHTML = "<p>Setting up db..</p>"
-    const db = new sqlite3.oo1.DB();
+    const db = new sqlite3.oo1.DB({filename:"",flags:'c'});
 
-	db.exec(dbcontenttext);  
-	// compute solution
-	const solutionRows= []
-	db.exec({
-		sql:solution.textContent,
-        rowMode: 'object',
-        resultRows: solutionRows
-    })
+    function runCommand  (sql) {
+        const columnNames=[]
+        const resultRows=[];
+        db.exec({
+            sql,
+            columnNames,
+            resultRows
+        })
+        return [
+            columnNames,
+            ...resultRows.slice(0,1000)
+        ]
+    }
+    runCommand(dbcontenttext)
+
+	const solutionResult=runCommand(solution.textContent)
+
 
 	result.innerHTML = "<p>Ready</p>"
 	run.disabled=false
 	run.addEventListener('click', function(e){
 		e.preventDefault()
 		try{
-      		let resultRows = [];
-			db.exec({
-				sql:codeInput.value, 
-		        rowMode: 'object',
-		        resultRows: resultRows
-		    })
-		    if(!resultRows.length) {
-		    	result.textContent = "No rows returned"
-		    	return
-		    } 
+            const sqlResult=runCommand(codeInput.value)
 
-			const columns = Object.keys(resultRows[0])
+           const [
+                columnNames,
+                ...resultRows
+            ]= sqlResult
 
 		    const table = document.createElement("table")
 		    const thead = document.createElement("thead")
 		    table.appendChild(thead)
 		    const tr= document.createElement("tr")
 		    thead.appendChild(tr)
-		    columns.forEach(col=>{
+		    columnNames.forEach(col=>{
 		    	const th= document.createElement("th")	
 			    tr.appendChild(th)
 			    th.textContent=col;
@@ -82,10 +85,10 @@ Promise.all([
 		    	const tr= document.createElement("tr")
 		    	tbody.appendChild(tr)
 
-			    columns.forEach(col=>{
+			    row.forEach(cell=>{
 			    	const td= document.createElement("td")	
 				    tr.appendChild(td)
-				    td.textContent=JSON.stringify(row[col]);
+				    td.textContent=JSON.stringify(cell);
 			    })	
 		    })
 
@@ -95,7 +98,7 @@ Promise.all([
 
 			if(next){
 
-                if (JSON.stringify(solutionRows)===JSON.stringify(resultRows)){
+                if (JSON.stringify(solutionResult)===JSON.stringify(sqlResult)){
                     next.removeAttribute('disabled')
                 }else{
                     next.setAttribute('disabled','true')

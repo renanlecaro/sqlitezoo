@@ -48,10 +48,9 @@ body{
     display: block;
     text-decoration: none;
     padding: 12.5px 25px;
-    line-height: 20px;
+    line-height: 24px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     color: #fff;
-
 }
  #menu a.active{
      background:#fff;
@@ -65,11 +64,16 @@ body{
 	width: 100%;
 	resize: vertical;
     min-height: 300px;
-    padding: 20px;
+    padding: 25px;
+    line-height: 25px;
     font-family: monospace;
 }
 #result{
+
 	font-family:monospace;
+}
+#result table{
+    border-collapse: collapse;
 }
 #result td{
 	max-width: 200px;
@@ -78,16 +82,23 @@ body{
 	text-overflow: ellipsis;
 }
 
+thead{
+    color: white;
+    background: linear-gradient(45deg, #0060df, #a400df);
+}
 td,th{
-	line-height: 20px;
-	padding: 10px 20px;
+	line-height: 25px;
+	padding: 12.5px 25px;
 }
 th{
+    text-align: left;
     font-weight: bold;
-	border-bottom: 1px solid grey;
+	border-bottom-color: grey;
 }
-tr:nth-child(2n){
-	background: rgba(0,0,0,0.1);
+
+tbody tr:nth-child(2n) td:nth-child(2n),
+tbody tr:nth-child(2n+1) td:nth-child(2n+1){
+	background: rgba(0,0,0,0.05);
 }
 #solution{
 	display: none;
@@ -95,7 +106,7 @@ tr:nth-child(2n){
 
 #content {
     position: relative;
-	padding: 20px 40px;
+	padding: 50px;
 }
 #content
 .buttons{
@@ -180,14 +191,20 @@ tr:nth-child(2n){
 }
 
 h1{
-    margin: 0;
+    margin: 0 0 25px 0;
+    padding: 0;
      font-size: 48px;
     font-weight: 800;
+    line-height: 50px;
     background: linear-gradient(45deg, #0060df, #a400df);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+p{
+    line-height: 25px;
+    padding: 0;
+    margin-bottom: 25px;
+}
 
 /*.github-link {*/
 /*  background: #333;*/

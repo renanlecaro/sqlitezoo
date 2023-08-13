@@ -32,13 +32,13 @@ INSERT INTO "world" VALUES ('Bhutan','Asia',38394,749090,1861000000,'Thimphu','.
 INSERT INTO "world" VALUES ('Bolivia','South America',1098581,10027254,27035000000,'Sucre','.bo','//upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg');
 INSERT INTO "world" VALUES ('Bosnia and Herzegovina','Europe',51209,3791622,17319000000,'Sarajevo','.ba','//upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg');
 INSERT INTO "world" VALUES ('Botswana','Africa',582000,2024904,14410000000,'Gaborone','.bw','//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg');
-INSERT INTO "world" VALUES ('Brazil','South America',8515767,202794000,2254109000000,'BrasÃ­lia','.br','//upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg');
+INSERT INTO "world" VALUES ('Brazil','South America',8515767,202794000,2254109000000,'Brasília','.br','//upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg');
 INSERT INTO "world" VALUES ('Brunei','Asia',5765,393162,16954000000,'Bandar Seri Begawan','.bn','//upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg');
 INSERT INTO "world" VALUES ('Bulgaria','Europe',110879,7245677,50972000000,'Sofia','.bg','//upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg');
 INSERT INTO "world" VALUES ('Burkina Faso','Africa',272967,17322796,10687000000,'Ouagadougou','.bf','//upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg');
 INSERT INTO "world" VALUES ('Burundi','Africa',27834,9420248,2257000000,'Bujumbura','.bi','//upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg');
 INSERT INTO "world" VALUES ('Cambodia','Asia',181035,15184116,14038000000,'Phnom Penh','.kh','//upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg');
-INSERT INTO "world" VALUES ('Cameroon','Africa',475442,20386799,26094000000,'YaoundÃ©','.cm','//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg');
+INSERT INTO "world" VALUES ('Cameroon','Africa',475442,20386799,26094000000,'Yaoundé','.cm','//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg');
 
 INSERT INTO "world" VALUES ('Canada','North America',9984670,35427524,1585000000000,'Ottowa','.ca','//upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg');
 INSERT INTO "world" VALUES ('Cape Verde','Africa',4033,491875,1903000000,'Praia','.cv','//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg');
@@ -46,12 +46,12 @@ INSERT INTO "world" VALUES ('Central African Republic','Africa',622984,4709000,2
 INSERT INTO "world" VALUES ('Chad','Africa',1284000,13211000,10183000000,'N''Djamena','.td','//upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg');
 INSERT INTO "world" VALUES ('Chile','South America',756102,17773000,268314000000,'Santiago','.cl','//upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg');
 INSERT INTO "world" VALUES ('China','Asia',9596961,1365370000,8358400000000,'Beijing','.cn','//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg');
-INSERT INTO "world" VALUES ('Colombia','South America',1141748,47662000,369813000000,'BogotÃ¡','.co','//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg');
+INSERT INTO "world" VALUES ('Colombia','South America',1141748,47662000,369813000000,'Bogotá','.co','//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg');
 INSERT INTO "world" VALUES ('Comoros','Africa',1862,743798,616000000,'Moroni','.km','//upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg');
 INSERT INTO "world" VALUES ('Congo, Democratic Republic of','Africa',2345000,69360000,NULL,'Kinshasa','.cd','//upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg');
 INSERT INTO "world" VALUES ('Congo, Republic of','Africa',342000,4559000,NULL,'Brazzaville','.cg','//upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg');
-INSERT INTO "world" VALUES ('Costa Rica','North America',51100,4667096,45107000000,'San JosÃ©','.cr','//upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg');
-INSERT INTO "world" VALUES ('CÃ´te d''Ivoire','Africa',322483,23919000,34506000000,'Yamoussoukro','.ci','//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg');
+INSERT INTO "world" VALUES ('Costa Rica','North America',51100,4667096,45107000000,'San José','.cr','//upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg');
+INSERT INTO "world" VALUES ('Côte d''Ivoire','Africa',322483,23919000,34506000000,'Yamoussoukro','.ci','//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg');
 INSERT INTO "world" VALUES ('Croatia','Europe',56594,4290612,56447000000,'Zagreb','.hr','//upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg');
 INSERT INTO "world" VALUES ('Cuba','Caribbean',109884,11167325,71017000000,'Havana','.cu','//upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg');
 INSERT INTO "world" VALUES ('Cyprus','Asia',9251,865878,22768000000,'Nicosia','.cy','//upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg');
@@ -84,7 +84,7 @@ INSERT INTO "world" VALUES ('Guyana','South America',214969,784894,2851000000,'G
 INSERT INTO "world" VALUES ('Haiti','Caribbean',27750,10413211,7187000000,'Port-au-Prince','.ht','//upload.wikimedia.org/wikipedia/commons/5/58/Flag_of_Haiti_%281964-1986%29.svg');
 INSERT INTO "world" VALUES ('Honduras','North America',112492,8555072,18564000000,'Tegucigalpa','.hn','//upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg');
 INSERT INTO "world" VALUES ('Hungary','Europe',93028,9879000,124600000000,'Budapest','.hu','//upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg');
-INSERT INTO "world" VALUES ('Iceland','Europe',103000,326340,13579000000,'ReykjavÃ­k','.is','//upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg');
+INSERT INTO "world" VALUES ('Iceland','Europe',103000,326340,13579000000,'Reykjavík','.is','//upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg');
 INSERT INTO "world" VALUES ('India','Asia',3166414,1246160000,1875213000000,'New Delhi','.in','//upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg');
 INSERT INTO "world" VALUES ('Indonesia','Asia',1904569,252164800,878043000000,'Jakarta','.id','//upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg');
 INSERT INTO "world" VALUES ('Iran','Asia',1648195,77552000,551588000000,'Tehran','.ir','//upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg');
@@ -113,7 +113,7 @@ INSERT INTO "world" VALUES ('Macedonia','Europe',25713,2062294,NULL,'Skopje','.m
 INSERT INTO "world" VALUES ('Madagascar','Africa',587041,21263403,9968000000,'Antananarivo','.mg','//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg');
 INSERT INTO "world" VALUES ('Malawi','Africa',118484,16829000,5653000000,'Lilongwe','.mw','//upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Malawi_%282010-2012%29.svg');
 INSERT INTO "world" VALUES ('Malaysia','Asia',330803,30177000,304726000000,'Kuala Lumpur','.my','//upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg');
-INSERT INTO "world" VALUES ('Maldives','Asia',300,317280,2606000000,'MalÃ©','.mv','//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg');
+INSERT INTO "world" VALUES ('Maldives','Asia',300,317280,2606000000,'Malé','.mv','//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg');
 INSERT INTO "world" VALUES ('Mali','Africa',1240192,15768000,10262000000,'Bamako','.ml','//upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg');
 INSERT INTO "world" VALUES ('Malta','Europe',316,416055,8775000000,'Valletta','.mt','//upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg');
 INSERT INTO "world" VALUES ('Marshall Islands','Oceania',181,56086,198000000,'Majuro','.mh','//upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg');
@@ -143,7 +143,7 @@ INSERT INTO "world" VALUES ('Pakistan','Asia',881912,188020000,215117000000,'Isl
 INSERT INTO "world" VALUES ('Palau','Oceania',459,20901,213000000,'Ngerulmud','.pw','//upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg');
 INSERT INTO "world" VALUES ('Panama','North America',75417,3405813,36253000000,'Panama City','.pa','//upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg');
 INSERT INTO "world" VALUES ('Papua New Guinea','Oceania',462840,7398500,15677000000,'Port Moresby','.pg','//upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg');
-INSERT INTO "world" VALUES ('Paraguay','South America',406752,6783374,25935000000,'AsunciÃ³n','.py','//upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg');
+INSERT INTO "world" VALUES ('Paraguay','South America',406752,6783374,25935000000,'Asunción','.py','//upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg');
 INSERT INTO "world" VALUES ('Peru','South America',1285216,30475144,204681000000,'Lima','.pe','//upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg');
 INSERT INTO "world" VALUES ('Philippines','Asia',342353,99804200,250182000000,'Manila','.ph','//upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg');
 INSERT INTO "world" VALUES ('Poland','Europe',312679,38496000,489852000000,'Warsaw','.pl','//upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg');
@@ -157,7 +157,7 @@ INSERT INTO "world" VALUES ('Saint Lucia','Caribbean',616,180000,1318000000,'Cas
 INSERT INTO "world" VALUES ('Saint Vincent and the Grenadines','South America',389,109000,694000000,'Kingstown','.vc','//upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg');
 INSERT INTO "world" VALUES ('Samoa','Oceania',2842,187820,681000000,'Apia','.ws','//upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg');
 INSERT INTO "world" VALUES ('San Marino','Europe',61,32637,1853000000,'San Marino','.sm','//upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg');
-INSERT INTO "world" VALUES ('Sao TomÃ© and PrÃ­ncipe','Africa',964,190428,707000000,'SÃ£o TomÃ©','.st','//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg');
+INSERT INTO "world" VALUES ('São Tomé and Príncipe','Africa',964,190428,707000000,'São Tomé','.st','//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg');
 INSERT INTO "world" VALUES ('Saudi Arabia','Asia',2149690,29994272,711050000000,'Riyadh','.sa','//upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg');
 INSERT INTO "world" VALUES ('Senegal','Africa',196722,12873601,13962000000,'Dakar','.sn','//upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg');
 INSERT INTO "world" VALUES ('Serbia','Europe',88361,7181505,38491000000,'Belgrade','.rs','//upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Serbia_%282004-2010%29.svg');
@@ -184,7 +184,7 @@ INSERT INTO "world" VALUES ('Tajikistan','Asia',143100,8160000,7633000000,'Dusha
 INSERT INTO "world" VALUES ('Tanzania','Africa',945087,44928923,28249000000,'Dodoma','.tz','//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg');
 INSERT INTO "world" VALUES ('Thailand','Asia',513120,64456700,385694000000,'Bangkok','.th','//upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg');
 INSERT INTO "world" VALUES ('Timor-Leste','Asia',14874,1212107,5387000000,'Dili','.tl','//upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg');
-INSERT INTO "world" VALUES ('Togo','Africa',56785,6993000,3917000000,'LomÃ©','.tg','//upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Togo_%281958-1960%29.svg');
+INSERT INTO "world" VALUES ('Togo','Africa',56785,6993000,3917000000,'Lomé','.tg','//upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Togo_%281958-1960%29.svg');
 INSERT INTO "world" VALUES ('Tonga','Oceania',747,103036,465000000,'Nuku''alofa','.to','//upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg');
 INSERT INTO "world" VALUES ('Trinidad and Tobago','Caribbean',5130,1328019,23225000000,'Port of Spain','.tt','//upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg');
 INSERT INTO "world" VALUES ('Tunisia','Africa',163610,10886500,45132000000,'Tunis','.tn','//upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg');
@@ -199,7 +199,7 @@ INSERT INTO "world" VALUES ('United States','North America',9826675,318320000,16
 INSERT INTO "world" VALUES ('Uruguay','South America',181034,3286314,49919000000,'Montevideo','.uy','//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg');
 INSERT INTO "world" VALUES ('Uzbekistan','Asia',447400,30492800,51414000000,'Tashkent','.uz','//upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg');
 INSERT INTO "world" VALUES ('Vanuatu','Oceania',12189,264652,752000000,'Port Vila','.vu','//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg');
-INSERT INTO "world" VALUES ('Vatican City','Europe',0,839,NULL,NULL,'.va','//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg');
+INSERT INTO "world" VALUES ('Vatican City','Europe',0,839,NULL,'Vatican City','.va','//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg');
 INSERT INTO "world" VALUES ('Venezuela','South America',916445,28946101,382424000000,'Caracas','.ve','//upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg');
 INSERT INTO "world" VALUES ('Vietnam','Asia',331212,89708900,155820000000,'Hanoi','.vn','//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg');
 INSERT INTO "world" VALUES ('Yemen','Asia',527968,25235000,32831000000,'Sanaâ€˜a','.ye','//upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg');

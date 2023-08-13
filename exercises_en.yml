@@ -1,0 +1,84 @@
+- title: Introduction
+  intro: >-
+    This website will teach you SQL from 0. We already set up a database for
+    you, it lists all the countries in the world. You can resize the 3 panels on
+    the page by dragging the corners at the bottom of the screen
+  goal: >-
+    Click the "run query" button below to see the result, then click "next
+    exercise".
+  db_name: world.sql
+  start_query: SELECT * FROM world
+  solution_query: SELECT * FROM world
+- title: Only output some columns
+  intro: >-
+    The world table has many columns, so we might need to scroll horizontally to
+    see them all in the result pane. And easier way would be to restrict the
+    output to only what we need. This can be achieved by specifying columns in
+    the SELECT clause.
+  goal: >-
+    Change the select below to only list the name and population of each
+    country.
+  db_name: world.sql
+  start_query: 'SELECT name, population, continent FROM world'
+  solution_query: 'SELECT name, population FROM world'
+- title: Only output some rows
+  intro: You can add a WHERE column with a condition to avoid listing all rows.
+  goal: Change the select below to only list the name and population of 'France'.
+  db_name: world.sql
+  start_query: 'SELECT name, population FROM world WHERE name=''Germany'''
+  solution_query: 'SELECT name, population FROM world WHERE name=''France'''
+- title: Lists possible values for a column
+  intro: >-
+    The word IN allows us to check if an item is in a list. The example shows
+    the name and population for the countries 'Brazil', 'Russia', 'India' and
+    'China'.
+  goal: 'Show the name and the population for ''Sweden'', ''Norway'' and ''Denmark''.'
+  db_name: world.sql
+  start_query: >-
+    SELECT name, population FROM world WHERE name IN ('Brazil', 'Russia',
+    'India', 'China');
+  solution_query: >-
+    SELECT name, population FROM world WHERE name IN ('Sweden', 'Norway' and
+    'Denmark');
+- title: Filter values by interval
+  intro: >-
+    Which countries are not too small and not too big? BETWEEN allows range
+    checking (range specified is inclusive of boundary values).The example below
+    shows countries with an area of 250,000-300,000 sq. km.
+  goal: >-
+    Show the country and the area for countries with an area between 200,000 and
+    250,000
+  db_name: world.sql
+  start_query: 'SELECT name, area FROM world WHERE area BETWEEN 250000 AND 300000'
+  solution_query: 'SELECT name, area FROM world  WHERE area BETWEEN 200000 AND 250000'
+- title: A full select statement
+  intro: Let's see if you can type a full select yourself.
+  goal: >-
+    Show the name for the countries that have a population of at least 200
+    million.
+  db_name: world.sql
+  start_query: null
+  solution_query: SELECT name FROM world WHERE population > 200000000
+- title: Computing new columns
+  intro: >-
+    The select can compute new columns base on what's already in the table. Here
+    for example we're computing the population density  (population_density).
+  goal: >-
+    Give the name and the per capita GDP (name it gdp_per_capita) of all
+    countries with a population of at least 200 million.
+  db_name: world.sql
+  start_query: 'SELECT name, population/area as population_density FROM world'
+  solution_query: >-
+    SELECT name, gdp/population as gdp_per_capita FROM world WHERE population >
+    200000000
+- title: AND and OR
+  intro: >-
+    In your where statement, you can combine multiple conditions. Here we show
+    "big" countries that have a large population (greater than 40 millions), OR
+    a large area (greater than 2 million square km)
+  goal: >-
+    Modify the query to find tiny crowded countries, with less the 1000 square
+    km of surface AND more than 2 million inhabitants.
+  db_name: world.sql
+  start_query: SELECT name FROM world WHERE population>40000000 OR area >2000000
+  solution_query: SELECT name FROM world WHERE population>2000000 AND area <1000

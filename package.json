@@ -5,9 +5,12 @@
   "main": "build.js",
   "scripts": {
     "start": "npx http-server dist  -c-1 -o & rm -rf dist/*.html && nodemon build.js --ignore dist/*.html --ignore node_modules -e js,css,html,sql --watch ",
-
     "build": "rm -rf dist/*.html && node build.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.6.6",
+    "yaml": "^2.3.1"
+  }
 }

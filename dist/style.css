@@ -189,18 +189,18 @@ h1{
 }
 
 
-.github-link {
-  background: #333;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: fixed;
-  right: 0;
-  top:0;
-  padding: 10px 60px;
-  transform: rotate(45deg) translateX(80px);
-}
-.github-link:hover{
-    background: #222;
-}
+/*.github-link {*/
+/*  background: #333;*/
+/*  color: white;*/
+/*  font-weight: bold;*/
+/*  text-decoration: none;*/
+/*  text-transform: uppercase;*/
+/*  position: fixed;*/
+/*  right: 0;*/
+/*  top:0;*/
+/*  padding: 10px 60px;*/
+/*  transform: rotate(45deg) translateX(80px);*/
+/*}*/
+/*.github-link:hover{*/
+/*    background: #222;*/
+/*}*/
